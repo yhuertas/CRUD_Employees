@@ -14,5 +14,5 @@ app.use(express.urlencoded({ //esta junto con .json se usan para POST and PUT pa
 }));
 //Routes
 app.use("/api/employees", require('./routes/employees.routes')); // la ruta base de la api es /api/employees y se presigue de las rutas de employees.routes.js
-
+app.use("/api/offices", require('./routes/office.routes'));
 module.exports = app; //Se exporta la funcionalidad del api.
